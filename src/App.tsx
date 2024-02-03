@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { mobile, tablet, laptopS, laptopL } from "../src/styles/media";
+import { Spinner } from '@chakra-ui/react'
+
+
 import "./App.css";
 
 function App() {
-  console.log(screen.width);
-  console.log(mobile);
-
-  return <Wrapper></Wrapper>;
+  return (
+    <Wrapper>
+      <Spinner color="red.600" />
+    </Wrapper>
+  );
 }
 
 export default App;
@@ -14,7 +18,7 @@ export default App;
 const Wrapper = styled.div`
   width: 100vw;
   height: 100vh;
-    @media ${mobile} {
+  @media ${mobile} {
     background-color: #f0d95c;
   }
 
@@ -28,5 +32,8 @@ const Wrapper = styled.div`
 
   @media ${laptopL} {
     background-color: #e3e4e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
