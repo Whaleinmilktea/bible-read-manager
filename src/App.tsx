@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mobile, tablet, laptopS, laptopL } from "../src/styles/media";
-import { Spinner } from '@chakra-ui/react'
+import DashBoard from "./pages/dashboard";
 
 
 import "./App.css";
@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
   return (
     <Wrapper>
-      <Spinner color="red.600" />
+      <DashBoard />
     </Wrapper>
   );
 }
