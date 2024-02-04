@@ -12,7 +12,7 @@
   - chakra UI 적용
   - 
 
-- [ ] Chakra UI 아코디언
+- [x] Chakra UI 아코디언
 
 - [ ] React-Router-DOM <Outlet /> 사용법
 
@@ -21,3 +21,5 @@
 - [ ] 성경 아이콘 추가
 
 - [ ] React-Query로 통신 관리
+
+- [ ] 데일리 체크 기능

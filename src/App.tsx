@@ -1,14 +1,15 @@
 import styled from "styled-components";
 import { mobile, tablet, laptopS, laptopL } from "../src/styles/media";
 import DashBoard from "./pages/dashboard";
-
-
+import CsvTest from "./pages/csv-test";
 import "./App.css";
+
 
 function App() {
   return (
     <Wrapper>
       <DashBoard />
+      <CsvTest />
     </Wrapper>
   );
 }
