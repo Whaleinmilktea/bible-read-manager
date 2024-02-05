@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import { ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RecoilRoot } from "recoil";
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,10 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ChakraProvider>
-      <RouterProvider router={router} fallbackElement={<App />} />
-    </ChakraProvider>
+    <RecoilRoot>
+      <ChakraProvider>
+        <RouterProvider router={router} fallbackElement={<App />} />
+      </ChakraProvider>
+    </RecoilRoot>
   </React.StrictMode>
 );

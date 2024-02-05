@@ -3,11 +3,13 @@ import { mobile, tablet, laptopS, laptopL } from "../src/styles/media";
 import DashBoard from "./pages/dashboard";
 import CsvTest from "./pages/csv-test";
 import "./App.css";
+import Gnb from "./layouts/gloval-nav-bar";
 
 
 function App() {
   return (
     <Wrapper>
+      <Gnb />
       <DashBoard />
       <CsvTest />
     </Wrapper>
