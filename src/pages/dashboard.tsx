@@ -6,42 +6,11 @@ import {
   AccordionIcon,
   Box,
 } from "@chakra-ui/react";
+import { data } from "../data/sample_data";
 
 const Dashboard = () => {
-  const data = [
-    {
-      id: 1,
-      date: "2024-02-03",
-      passage: "창세기 1장 ~ 2장",
-      content: [
-        "태초에 하나님이 천지를 창조하시니라",
-        "땅이 혼돁하고 공허하며, 흑암이 깊음 위에 있고 하나님의 영은 수면 위에 운행하시니라",
-      ],
-      checked: false,
-    },
-    {
-      id: 2,
-      date: "2024-02-03",
-      passage: "창세기 1장 ~ 2장",
-      content: [
-        "태초에 하나님이 천지를 창조하시니라",
-        "땅이 혼돁하고 공허하며, 흑암이 깊음 위에 있고 하나님의 영은 수면 위에 운행하시니라",
-      ],
-      checked: false,
-    },
-    {
-      id: 3,
-      date: "2024-02-03",
-      passage: "창세기 1장 ~ 2장",
-      content: [
-        "태초에 하나님이 천지를 창조하시니라",
-        "땅이 혼돁하고 공허하며, 흑암이 깊음 위에 있고 하나님의 영은 수면 위에 운행하시니라",
-      ],
-      checked: false,
-    },
-  ];
-
-  const renderData = data.map((item) => {
+  const newData = data
+  const renderData = newData.map((item) => {
     return (
       <div key={item.id}>
         <div>{item.date}</div>
@@ -68,7 +37,6 @@ const Dashboard = () => {
 
   return (
     <div>
-      <h1>Dashboard</h1>
       {renderData}
     </div>
   );

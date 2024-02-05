@@ -33,11 +33,12 @@ const Wrapper = styled.div`
   position: fixed;
   display: flex;
   flex-direction: row-reverse;
+  top: 0;
   width: 100vw;
-  height: 50px;
+  height: 40px;
 
   @media ${mobile} {
-    background-color: #f0d95c;
+    background-color: #f6f6f6;
   }
 
   @media ${tablet} {

@@ -1,24 +1,24 @@
 import styled from "styled-components";
-import { mobile, tablet, laptopS, laptopL } from "../src/styles/media";
-import "./App.css";
-import Gnb from "./layouts/gloval-nav-bar";
-import Main from "./pages/main";
+import { mobile, tablet, laptopS, laptopL } from "../styles/media";
+import CsvTest from "./csv-test";
+import Dashboard from "./dashboard";
 
-function App() {
+const Main = () => {
   return (
-    <Wrapper>
-      <Gnb />
-      <Main />
-    </Wrapper>
+      <Wrapper>
+        <CsvTest />
+        <Dashboard />
+      </Wrapper>
   );
-}
+};
 
-export default App;
+export default Main;
 
 const Wrapper = styled.div`
-  width: 100vw;
-  height: 100vh;
+  padding: 20px;
+
   @media ${mobile} {
+    margin-top: 30px;
     background-color: #f6f6f6;
   }
 
