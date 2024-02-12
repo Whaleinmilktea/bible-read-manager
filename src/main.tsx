@@ -5,11 +5,17 @@ import { ChakraProvider } from "@chakra-ui/react";
 import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
+import CreateCycle from "./pages/create.tsx";
+import Dashboard from "./pages/dashboard.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {index : true, element: <Dashboard />},
+      {path: "create", element: <CreateCycle/>},
+    ],
   },
 ]);
 
